@@ -1,17 +1,16 @@
 public class Contest {
     public static String judge(int number) {
+        String result = number + "";
         if (number % 3 == 0) {
             if (number % 5 == 0) {
-                returnString("fizzbuzz");
+                result = "fizzbuzz";
+            } else {
+                result = "fizz";
             }
-            returnString("fizz");
         } else if (number % 5 == 0) {
-            returnString("buzz");
+            result = "buzz";
         }
-        return number + "";
+        return result;
     }
 
-    public static String returnString(String str) {
-        return str;
-    }
 }
